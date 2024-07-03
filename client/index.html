@@ -1,0 +1,31 @@
+<style>
+  table {border-collapse: collapse; visibility: hidden}
+  th {border: 1px solid grey; padding: 8px; color: grey;}
+  td {border: 1px solid grey; padding: 8px;}
+  body {background-color: black; color: white;}
+  input {background: none; color: white;}
+  button {background: none; color: grey;}
+  #submit {visibility: hidden;}
+  .of_interest {background: darkred; color: white;}
+</style>
+<br>
+<center>
+<input type="text" id="phrase">
+<button id="submit"></button>
+<button id="save">SAVE</button>
+<button id="random">?</button>
+<br>
+<br>
+<table id="results">
+  <tr>
+    <th>PHRASE</th>
+    <th>JEWISH</th>
+    <th>ENGLISH</th>
+    <th>SIMPLE</th>
+    <th>E.·.Q.·.</th>
+  </tr>
+</table>
+</center>
+
+<script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+<script src="client/js/client.js"></script>
