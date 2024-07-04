@@ -66,12 +66,19 @@ var of_interest = function(data){
   var str = data.toString();
   if(str.length > 1){
     var n = str[0]
+    var x = 0;
     for(var i in str){
       if(str[i] != n){
         return ''
+      } else {
+        x++;
       }
     }
-    return ' class="of_interest"'
+    if(x > 2){
+      return ' class="of_interest"'
+    } else {
+      return ''
+    }
   } else {
     return ''
   }
